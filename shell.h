@@ -27,5 +27,7 @@ void __free_list_full(list_t *head);
 list_t *__get_node_at_index(list_t *head, unsigned int index);
 list_t *__insert_node_at_index(list_t **head, unsigned int idx, void *ptr);
 int __delete_node_at_index(list_t **head, unsigned int index);
+void *do_mem(size_t size, void *ptr);
+void do_exit(int fd, char *msg, int code);
 
 #endif
