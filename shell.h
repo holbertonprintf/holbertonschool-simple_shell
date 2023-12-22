@@ -19,5 +19,9 @@ int sizeof_command(char **tokens);
 int _isdigit(int c);
 int has_newline(char *input);
 void shiftbuffer(char *input, int newline_index, int filled);
+size_t __list_len(list_t *h);
+list_t *__add_node(list_t **head, void *ptr);
+list_t *__add_node_end(list_t **head, void *ptr);
+void __free_list(list_t *head);
 
 #endif
