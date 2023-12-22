@@ -29,5 +29,8 @@ list_t *__insert_node_at_index(list_t **head, unsigned int idx, void *ptr);
 int __delete_node_at_index(list_t **head, unsigned int index);
 void *do_mem(size_t size, void *ptr);
 void do_exit(int fd, char *msg, int code);
+char *_reverse(char *str, int n);
+char *_itoa(int num);
+char *_memset(char *s, char b, int n);
 
 #endif
