@@ -9,5 +9,9 @@ ssize_t else_handle_input(char *lineptr, int stream, char *input, int filled);
 ssize_t _getline(char *lineptr, int stream);
 void _free(char **list, int count);
 char **_strtok(char *str, char *delim);
+int _strcmp(char *s1, char *s2);
+int _strlen(char *s);
+int word_count(char *str, char *delim);
+char *_strcat(char *dest, char *src);
 
 #endif
