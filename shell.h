@@ -23,5 +23,9 @@ size_t __list_len(list_t *h);
 list_t *__add_node(list_t **head, void *ptr);
 list_t *__add_node_end(list_t **head, void *ptr);
 void __free_list(list_t *head);
+void __free_list_full(list_t *head);
+list_t *__get_node_at_index(list_t *head, unsigned int index);
+list_t *__insert_node_at_index(list_t **head, unsigned int idx, void *ptr);
+int __delete_node_at_index(list_t **head, unsigned int index);
 
 #endif
