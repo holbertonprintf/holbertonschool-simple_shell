@@ -59,7 +59,7 @@
 
 ## Installing
 
-Compilation
+Compilation.
 
 Your shell will be compiled this way:
 
