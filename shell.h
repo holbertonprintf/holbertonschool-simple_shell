@@ -14,5 +14,10 @@ int _strlen(char *s);
 int word_count(char *str, char *delim);
 char *_strcat(char *dest, char *src);
 char *_strcpy(char *dest, char *src);
+int _atoi(char *s);
+int sizeof_command(char **tokens);
+int _isdigit(int c);
+int has_newline(char *input);
+void shiftbuffer(char *input, int newline_index, int filled);
 
 #endif
