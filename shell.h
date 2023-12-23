@@ -78,5 +78,16 @@ list_s *listify(char **arr);
 void free_double_array(char **list);
 char **do_env(char *add, char *delete);
 char *read_textfile(char *filename);
+int search_ops(char **tokens);
+char **get_builtins();
+char **get_path();
+char *get_env_val(char *name);
+char *find_path(char **path, char *command);
+char **get_env(void);
+char *get_full_command(char *path, char *command);
+int exec_builtin(char **tokens, int bcase);
+int check_access(char *comm, char *token);
+char *prep_execve(char *token);
+int exec_nb(char **tokens);
 
 #endif
