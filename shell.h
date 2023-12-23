@@ -89,5 +89,9 @@ int exec_builtin(char **tokens, int bcase);
 int check_access(char *comm, char *token);
 char *prep_execve(char *token);
 int exec_nb(char **tokens);
+int env_builtin(void);
+int setenv_builtin(char **tokens);
+int unsetenv_builtin(char **tokens);
+int cd_builtin(char **tokens);
 
 #endif
