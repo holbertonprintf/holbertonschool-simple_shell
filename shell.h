@@ -48,5 +48,13 @@ char *_memset(char *s, char b, int n);
 void signal_handler(int sig);
 void handle_file(char *filename);
 void main_loop(char *filename);
+size_t list_len(list_s *h);
+list_s *add_node(list_s **head, char *ptr);
+list_s *add_node_end(list_s **head, char *ptr);
+void free_list(list_s *head);
+void free_list_full(list_s *head);
+list_s *get_node_at_index(list_s *head, unsigned int index);
+list_s *insert_node_at_index(list_s **head, unsigned int idx, char *ptr);
+int delete_node_at_index(list_s **head, unsigned int index);
 
 #endif
