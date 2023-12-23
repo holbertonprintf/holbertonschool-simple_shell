@@ -17,6 +17,20 @@ typedef struct list_p
 	struct list_p *next;
 } list_t;
 
+/**
+ * struct list_p2 - singly linked list
+ * @ptr: a malloced string
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
+ * for Holberton shell project
+ */
+typedef struct list_p2
+{
+	char *ptr;
+	struct list_p2 *next;
+} list_s;
+
 int _getchar(void);
 ssize_t else_handle_input(char *lineptr, int stream, char *input, int filled);
 ssize_t _getline(char *lineptr, int stream);
