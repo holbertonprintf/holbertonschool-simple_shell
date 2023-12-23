@@ -56,5 +56,13 @@ void free_list_full(list_s *head);
 list_s *get_node_at_index(list_s *head, unsigned int index);
 list_s *insert_node_at_index(list_s **head, unsigned int idx, char *ptr);
 int delete_node_at_index(list_s **head, unsigned int index);
+int linum(int add);
+char *prog_name(char *name);
+void my_error(char *command, int status, char *extra);
+char **arrayify(list_s *head);
+list_s *listify(char **arr);
+void free_double_array(char **list);
+char **do_env(char *add, char *delete);
+char *read_textfile(char *filename);
 
 #endif
