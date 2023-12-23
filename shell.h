@@ -4,6 +4,19 @@
 #include <stddef.h>
 #include <unistd.h>
 
+/**
+ * struct list_p - singly linked list
+ * @ptr: a malloced address
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
+ */
+typedef struct list_p
+{
+	void *ptr;
+	struct list_p *next;
+} list_t;
+
 int _getchar(void);
 ssize_t else_handle_input(char *lineptr, int stream, char *input, int filled);
 ssize_t _getline(char *lineptr, int stream);
@@ -32,5 +45,8 @@ void do_exit(int fd, char *msg, int code);
 char *_reverse(char *str, int n);
 char *_itoa(int num);
 char *_memset(char *s, char b, int n);
+void signal_handler(int sig);
+void handle_file(char *filename);
+void main_loop(char *filename);
 
 #endif
