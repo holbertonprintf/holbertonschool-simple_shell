@@ -93,5 +93,6 @@ int env_builtin(void);
 int setenv_builtin(char **tokens);
 int unsetenv_builtin(char **tokens);
 int cd_builtin(char **tokens);
+int execute(char **tokens);
 
 #endif
